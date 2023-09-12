@@ -68,7 +68,7 @@ For the latest version of the ICText dataset, images and annotations are sourced
     ]
 }
 ```
-Please note that the aesthetic label follows the sequence of low contrast, blurry, and broken.
+Please note that the aesthetic label follows the sequence of low contrast, blurry, and broken. Given that the annotation for ICText follow MSCOCO's format closely, you can evaluate the predictions on ICText accordingly using this [COCO Results Analysis tool](https://github.com/chunchet-ng/COCO_results_analysis).
 
 ### ICText-LT Dataset
 ICText-LT is a long-tailed character classification dataset introduced in the work of [FFDS-Loss](https://github.com/nwjun/FFDS-Loss/tree/main). Images are cropped from ICText and resampled to form this dataset.
