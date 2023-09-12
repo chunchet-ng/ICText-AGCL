@@ -85,9 +85,9 @@ ICText-LT is a long-tailed character classification dataset introduced in the wo
 #### ICText-LT Statistics
 | Subset | Imbalance Factor | Images|
 | :--- | :----: | :----: |
-| Train | 68,307 | 18 |
-| Train | 25,711 | 100 |
-| Test | 6,300 | N/A |
+| Train | 18 | 68,307 |
+| Train | 100 | 25,711 |
+| Test | N/A | 6,300 |
 
 ## Attribute-Guided Curriculum Learning (AGCL)
 In this work, we utilize the publicly available repositories for several object detection architectures:
