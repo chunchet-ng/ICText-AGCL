@@ -70,10 +70,24 @@ For the latest version of the ICText dataset, images and annotations are sourced
 ```
 Please note that the aesthetic label follows the sequence of low contrast, blurry, and broken. Given that the annotation for ICText follow MSCOCO's format closely, you can evaluate the predictions on ICText accordingly using this [COCO Results Analysis tool](https://github.com/chunchet-ng/COCO_results_analysis).
 
+#### ICText Statistics
+| Subset | Images | Perfect Text | Difficult Text | Total Text |
+| :--- | :----: | :----: | :----: | :----: |
+| Train | 7,000 | 19,153 | 50,597 | 69,750 |
+| Test | 3,000 | 10,288 | 20,114 | 30,402 |
+
 ### ICText-LT Dataset
 ICText-LT is a long-tailed character classification dataset introduced in the work of [FFDS-Loss](https://github.com/nwjun/FFDS-Loss/tree/main). Images are cropped from ICText and resampled to form this dataset.
+
 #### ICText-LT Annotation TXT Format
 ```file_name, char_class```
+
+#### ICText-LT Statistics
+| Subset | Imbalance Factor | Images|
+| :--- | :----: | :----: |
+| Train | 68,307 | 18 |
+| Train | 25,711 | 100 |
+| Test | 6,300 | N/A |
 
 ## Attribute-Guided Curriculum Learning (AGCL)
 In this work, we utilize the publicly available repositories for several object detection architectures:
