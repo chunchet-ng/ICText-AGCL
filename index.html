@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="When IC Meets Text: Towards a Rich Annotated Integrated Circuit Text Dataset">
+  <meta name="keywords" content="ICText, AGCL, OCR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When IC Meets Text: Towards a Rich Annotated Integrated Circuit Text Dataset</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/chip.ico">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="./static/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script defer src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+  <div class="container pt-3">
+    <ul class="nav nav-pills justify-content-center gap-2">
+      <li class="nav-item">
+        <a class="btn btn-primary" href="https://chunchet-ng.github.io/" target="_blank">
+          <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="btn-group">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" 
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More Research
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Text in the Dark</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-none d-sm-block"></div>
+        <h1 class="col-xs-12 col-md-8 text-center title">When IC Meets Text: Towards a Rich Annotated Integrated Circuit
+        Text Dataset</h1>
+        <div class="col-2 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-4 text-center publication-authors">
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=1lKI2vEAAAAJ" target="_blank">Chun Chet
+              Ng</a><sup>1,*</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=UewYUXwAAAAJ" target="_blank">Che-Tsung
+              Lin</a><sup>2,*</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=YEwTuToAAAAJ" target="_blank">Zhi Qin
+              Tan</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://www.linkedin.com/in/xinyu-wang-023162253/" target="_blank">Xinyu Wang</a><sup>3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?hl=en&user=fYKEYmUAAAAJ" target="_blank">Jie Long
+              Kew</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?user=hKfga9oAAAAJ" target="_blank">Chee Seng
+              Chan</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://scholar.google.ca/citations?user=Pmi5GEAAAAAJ" target="_blank">Christopher
+              Zach</a><sup>2</sup>
+          </span>
+        </div>
+        <div class="col-4 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row p-3">
+        <div class="col-3 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <span class="author-block"><sup>1</sup>Universiti Malaya, Kuala Lumpur, Malaysia</span><br />
+          <span class="author-block"><sup>2</sup>Chalmers University of Technology, Gothenburg, Sweden</span><br />
+          <span class="author-block"><sup>3</sup>The University of Adelaide, Adelaide, Australia</span><br />
+          <span class="author-block"><sup>*</sup>Equal Contribution</span>
+        </div>
+        <div class="col-3 d-none d-sm-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-6 d-grid gap-2 d-md-block text-center">
+            <a class="btn btn-outline-primary m-1">
+                <i class="fa-solid fa-file-pdf"></i>
+                Paper (Under Review)
+            </a>
+            <a class="btn btn-outline-primary m-1"
+              href="https://github.com/chunchet-ng/ICText-AGCL" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub Repo
+            </a>
+            <a class="btn btn-outline-primary m-1"
+              href="https://github.com/chunchet-ng/ICText-AGCL#integrated-circuit-text-ictext-dataset" target="_blank">
+                <i class="fa-solid fa-images"></i>
+                ICText Dataset
+            </a>
+        </div>
+        <div class="col-3 d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Abstract</h1>
+          <p class="text-start">Automated Optical Inspection (AOI) is a process that uses cameras to autonomously scan printed circuit
+            boards for quality control. Text is often printed on chip components, and it is crucial that this text is correctly recognized during
+            AOI, as it contains valuable information. In this paper, we introduce ICText, the largest dataset for text
+            detection and recognition on integrated circuits. Uniquely, it includes labels for character quality attributes such as low
+            contrast, blurry, and broken. While loss-reweighting and Curriculum Learning (CL) have been proposed to improve object detector
+            performance by balancing positive and negative samples and gradually training the model from easy to hard samples, these methods have had
+            limited success with one-stage object detectors commonly used in industry. To address this, we propose Attribute-Guided
+            Curriculum Learning (AGCL), which leverages the labeled character quality attributes in ICText. Our extensive experiments demonstrate
+            that AGCL can be applied to different detectors in a plug-andplay fashion to achieve higher Average Precision (AP),
+            significantly outperforming existing methods on ICText without any additional computational overhead during inference. Furthermore, we
+            show that AGCL is also effective on the generic object detection dataset Pascal VOC.</p>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">BibTeX</h1>
+          <p class="text-start">If you wish to cite the ICDAR 2021 Competition on Integrated Circuit Text Spotting and Aesthetic
+            Assessment paper:</p>
+            <div class="text-primary border border-primary rounded p-3">
+              <p class="m-0">
+                <button class="btn btn-primary float-end ms-2" onclick="copy_text()">
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+                <span id="bibtex">
+                @inproceedings{icdar2021_ictext,<br/>
+                  <span class="tab"></span>author= {Ng, Chun Chet and Nazaruddin, Akmalul Khairi Bin and Lee, Yeong Khang and Wang, Xinyu
+                  <span class="tab"></span>and Liu, Yuliang and Chan, Chee Seng and Jin, Lianwen and Sun, Yipeng and Fan, Lixin},<br/>
+                  <span class="tab"></span>title= {ICDAR 2021 Competition on Integrated Circuit Text Spotting and Aesthetic Assessment},<br/>
+                  <span class="tab"></span>booktitle= {Document Analysis and Recognition -- ICDAR 2021},<br/>
+                  <span class="tab"></span>year= {2021},<br/>
+                  <span class="tab"></span>publisher= {Springer International Publishing},<br/>
+                  <span class="tab"></span>pages= {663--677}}
+                </span>
+              </p>
+            </div>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer>
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <i class="fa-regular fa-copyright"></i> 2023 Universiti Malaya. Built with Bootstrap. Inspired by 
+          <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies.github.io</a>.  
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
