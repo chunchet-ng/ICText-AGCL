@@ -163,6 +163,203 @@
       <div class="row">
         <div class="col d-none d-sm-block"></div>
         <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">ICText Dataset</h1>
+          <p class="text-start">Samples of annotations in ICText dataset. Besides the common annotations
+            (i.e. bounding box and class), we also include the multi-label character quality attributes.
+            They are represented by (i) <span class="text-danger">red dot</span> for low contrast character, 
+            (ii) <span class="text-success">green dot</span> dot for blurry
+            characters, and lastly (iii) <span class="text-primary">blue dot</span> for broken characters.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="static/images/59163.jpg"
+                class="resize img-fluid rounded mb-2"
+                alt="ICText Sample 1"
+              />
+            </div>
+
+            <div class="col-md-4">
+              <img
+                src="static/images/91068.jpg"
+                class="resize img-fluid rounded mb-2"
+                alt="ICText Sample 2"
+              />
+            </div>
+          
+            <div class="col-md-4">
+              <img
+                src="static/images/388715.jpg"
+                class="resize img-fluid rounded mb-2"
+                alt="ICText Sample 3"
+              />
+            </div>
+          </div>
+          <p class="text-start"></p>The ICText dataset contains a total of 10,000 images with 100,152 legible characters. 
+          Of the 69,750 annotated samples in the training set, 50,597 have quality defects (72.5%). In the testing
+          set, 20,114 out of 30,402 characters (66.2%) have quality attributes. This
+          indicates a high number of flawed characters in ICText, which is also the
+          first-ever dataset with quality labels on characters. All
+          images and annotations are fairly distributed with a 7:3 ratio between the
+          training set (69.64% of complete annotations) and the testing set (30.36%). 
+          Statistics of ICText are visualized in the following figures:</p>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-theme="dark">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="position-relative d-md-block text-secondary text-center">
+                  <h5>Figure 1:</h5>
+                  <p>Number of images and annotated characters (defective and perfect) in the training
+                    and testing splits of ICText.</p>
+                </div>
+                <img src="static/images/ann_stats.png" class="d-block img-fluid">
+              </div>
+              <div class="carousel-item">
+                <div class="position-relative text-center d-md-block text-secondary text-center">
+                  <h5>Figure 2:</h5>
+                  <p> Histogram of character classes in ICText.</p>
+                </div>
+                <img src="static/images/char_stats.png" class="d-block img-fluid">
+              </div>
+              <div class="carousel-item">
+                <div class="position-relative text-center d-md-block text-secondary text-center">
+                  <h5>Figure 3:</h5>
+                  <p> Stacked bar chart of quality attributes in ICText.</p>
+                </div>
+                <img src="static/images/aes_stats.png" class="d-block img-fluid">
+              </div>
+            </div>
+            <div class="position-relative text-center carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <p class="text-start"></p>The ICText dataset is also extended to a long-tail classification dataset, ICText-LT.
+          A new Frequency Weighted Focusing and Dynamic Probability Smoothing (FFDS) loss is then proposed to dynamically
+          reduces the influence of outliers and assigns class-dependent focusing parameters.
+          More details can be found in this <a href="https://github.com/nwjun/FFDS-Loss" target="_blank">GitHub repo</a>.</p>
+
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">AGCL</h1>
+          <p class="text-start">Attribute-Guided Curriculum Learning (AGCL) loss proposes to zero out the gradient of difficult characters.
+            It can also balances the contribution of negative samples through weighting factors and focusing parameters.
+            The training is split into two phases where AGCL loss is used in the first phase, and the Cross Entropy loss is used in the 
+            second phase.
+          </p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/agcl_stage.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Schematic diagram of AGCL.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="text-start">The figure below shows the differences between common existing loss functions used by object detectors
+            and our proposed AGCL on positive and negative cases during training.
+          </p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/loss_compare.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Comparison of existing loss functions and AGCL.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="text-center title">Experiment Results</h1>
+          <p class="text-start">Quantitative results of all methods on ICText's test set are shown in the table below. 
+            Models marked with * are tested on a subset of easier images. Both inference speed and GPU memory are tested on Titan
+            X, and the rest of the hardware specifications can be found in our paper. ± marks the
+            standard deviation calculated over five runs, and ↑ shows the relative AP improvement of
+            AGCL-enabled methods over the baseline methods.</p>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <figure class="figure">
+                <img src="static/images/quanti_res.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Quantitative result table.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="text-start">Qualitative results of ABCNet, PAN++, YOLOv4 (baseline), and our proposed
+            YOLOv4-AGCL are shown in the figures below. <span class="text-success">Green boxes</span> = true positives; 
+            <span class="text-danger">Red boxes</span> = false positives; 
+            <span class="text-primary">Blue boxes</span> = false negatives. 
+            The character class prediction is shown in the top left corner of each box.</p>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <figure class="figure">
+                <img src="static/images/389836_abc.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">(a) ABCNet.</figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-6">
+              <figure class="figure">
+                <img src="static/images/389836_panpp.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">(b) PAN++.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <figure class="figure">
+                <img src="static/images/389836_baseline.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">(c) YOLOv4 (baseline).</figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-6">
+              <figure class="figure">
+                <img src="static/images/389836_agcl.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">(d) YOLOv4-AGCL (Ours).</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="text-start">We show that asking non-AGCL detectors to learn directly from flawed characters has side effects,
+          i.e., more false positives and false negatives. Additionally, both ABCNet and PAN++ suffer from 
+          granularity issues. In contrast, there are significantly fewer false-positive and false-negative boxes 
+          in our proposed method (i.e., YOLOv4-AGCL), showing that training a detector in an
+          easy-to-hard fashion guided by quality attributes can achieve better results.</p>
+        </div>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-sm-block"></div>
+        <div class="col-xs-12 col-md-8">
           <h2 class="text-center title">BibTeX</h1>
           <p class="text-start">If you wish to cite the ICDAR 2021 Competition on Integrated Circuit Text Spotting and Aesthetic
             Assessment paper:</p>
@@ -183,6 +380,17 @@
                 </span>
               </p>
             </div>
+            <p class="text-start pt-3">If you wish to cite the lastest version of the ICText dataset and AGCL:</p>
+              <div class="text-primary border border-primary rounded p-3" id="bibtex_div">
+                <p class="m-0">
+                  <button class="btn btn-primary float-end ms-2" onclick="copy_text()" id="bibtex_btn">
+                    <div id="icon_div"><i class="fa-solid fa-copy"></i></div>
+                  </button>
+                  <span id="bibtex">
+                    Our paper is currently under review. We will update this section when it is published.
+                  </span>
+                </p>
+              </div>
         </div>
         <div class="col d-none d-sm-block"></div>
       </div>

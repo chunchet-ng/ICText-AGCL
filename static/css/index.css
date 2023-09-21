@@ -43,3 +43,13 @@ body {
   display: inline-block;
   margin-left: 15px;
 }
+
+.resize {
+  object-fit: cover;
+  width: auto;
+  min-height: 280px;
+}
+
+.figure-caption {
+  font-size: 1em;
+}
