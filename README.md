@@ -120,7 +120,7 @@ If you wish to cite the ICDAR 2021 Competition on Integrated Circuit Text Spotti
   pages= {663--677}}
 ```
 
-If you wish to cite the lastest version of the ICText dataset and AGCL:
+If you wish to cite the latest version of the ICText dataset and AGCL:
 
 ***Our paper is currently under review. We will update this section when it is published.***
 
