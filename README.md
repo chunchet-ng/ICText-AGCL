@@ -1,5 +1,7 @@
 # ICText-AGCL
 
+Released on September 01, 2023
+
 Official repository of the paper: "When IC Meets Text: Towards a Rich Annotated Integrated Circuit Text Dataset"
 
 Authored By:
