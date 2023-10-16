@@ -1,4 +1,4 @@
-# ICText-AGCL
+# ICText - Integrated Circuit Text Dataset (Official Site)
 
 Released on September 01, 2023
 
