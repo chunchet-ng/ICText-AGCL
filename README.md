@@ -122,15 +122,33 @@ If you wish to cite the ICDAR 2021 Competition on Integrated Circuit Text Spotti
   pages= {663--677}}
 ```
 
-If you wish to cite the latest version of the ICText dataset and AGCL:
+If you wish to cite the latest version of the ICText dataset and AGCL, published in Elsevier's Pattern Recognition journal:
 
-***Our paper is currently under review. We will update this section when it is published.***
+```bibtex
+@article{ictext_agcl,
+  author= {Ng, Chun Chet
+  and Lin, Che-Tsung
+  and Tan, Zhi Qin
+  and Wang, Xinyu
+  and Kew, Jie Long
+  and Chan, Chee Seng
+  and Zach, Christopher},
+  title= {When IC meets text: Towards a rich annotated integrated circuit text dataset},
+  journal = {Pattern Recognition},
+  year= {2024},
+  volume = {147},
+  pages = {110124},
+  year = {2024},
+  issn = {0031-3203},
+  doi = {https://doi.org/10.1016/j.patcog.2023.110124},
+  url = {https://www.sciencedirect.com/science/article/pii/S003132032300821X}}
+```
 
 ## Feedback
 We welcome all suggestions and opinions (both positive and negative) on this work. Please contact us by sending an email to `ngchunchet95 at gmail.com` or `cs.chan at um.edu.my`.
 
 ## Acknowledgement
-We would like to express our gratitude for the contributions of computing resources and annotation platforms by [ViTrox Corporation Berhad](https://www.vitrox.com/). Their generous support has made this work possible.
+We sincerely thank [ViTrox Corporation Berhad](https://www.vitrox.com/) for their support in annotating the ICText dataset. Our appreciation also goes to NVIDIA Corporation and ViTrox Corporation Berhad for providing essential computing resources.
 
 ## License and Copyright
 This project is open source under the BSD-3 license (refer to the [LICENSE](LICENSE.txt) file for more information).
