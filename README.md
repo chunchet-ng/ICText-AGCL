@@ -138,7 +138,6 @@ If you wish to cite the latest version of the ICText dataset and AGCL, published
   year= {2024},
   volume = {147},
   pages = {110124},
-  year = {2024},
   issn = {0031-3203},
   doi = {https://doi.org/10.1016/j.patcog.2023.110124},
   url = {https://www.sciencedirect.com/science/article/pii/S003132032300821X}}
